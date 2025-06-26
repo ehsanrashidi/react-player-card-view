@@ -33,7 +33,7 @@
 ۱. کلون کردن پروژه:
 
 ```bash
-git clone https://github.com/ehsanrashidi/simple-player.git
+git clone https://github.com/ehsanrashidi/react-player-card-view.git
 cd simple-player
 ```
 
