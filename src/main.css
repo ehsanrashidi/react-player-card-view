@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-bg: linear-gradient(135deg, #f8fafc 0%, #e8e8e8 100%);
+    --header-bg: linear-gradient(90deg, #fff 60%, #e0e7ff 100%);
+    --footer-bg: linear-gradient(90deg, #f3f4f6 60%, #e0e7ff 100%);
+    --primary-color: #333;
+    --accent-color: #6366f1;
+    --shadow: 0 4px 24px 0 rgba(60, 60, 60, 0.08);
+    --radius: 18px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-family: "Vazirmatn", "Segoe UI", "Roboto", sans-serif;
+}
+
+body {
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: var(--primary-color);
+    transition: background 0.5s;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px 12px 0 12px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    background: var(--header-bg);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin-bottom: 32px;
+    padding: 24px 0 18px 0;
+    letter-spacing: 1px;
+    transition: box-shadow var(--transition);
+    animation: fadeInDown 0.7s;
+}
+
+.header .title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-style: italic;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px 24px;
+    margin-bottom: 32px;
+    animation: fadeIn 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: var(--footer-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px 9px;
+    margin-top: auto;
+    transition: box-shadow var(--transition);
+}
+
+.footer .item {
+    color: var(--primary-color);
+    font-style: italic;
+    padding: 6px;
+    border-radius: 8px;
+    transition: background var(--transition), color var(--transition);
+}
+
+.footer .whatsapp {
+    color: #25d366;
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer .linkedin {
+    color: #0077b5;
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer .instagram {
+    color: #c13584;
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.footer .github {
+    color: var(--primary-color);
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.footer .phone {
+    color: var(--primary-color);
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.footer .email {
+    color: var(--primary-color);
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+.footer .website {
+    color: var(--primary-color);
+    font-style: italic;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer .separator {
+    color: #bbb;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    .header,
+    .content,
+    .footer {
+        border-radius: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .content {
+        padding: 18px 6px;
+    }
+    .footer {
+        font-size: 1rem;
+        gap: 8px;
+    }
+}
