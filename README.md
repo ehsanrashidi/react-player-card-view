@@ -74,7 +74,7 @@ function App() {
 ### اطلاعات تماس
 
 -   **نام:** احسان رشیدی
--   **تلفن:** [+989134562731](tel:+989134562731)
+-   **تلفن:** [00989134562731](tel:+989134562731)
 -   **ایمیل:** [info@ehsanrashidi.ir](mailto:info@ehsanrashidi.ir)
 -   **گیت‌هاب:** [github.com/ehsanrashidi](https://github.com/ehsanrashidi)
 -   **اینستاگرام:** [instagram.com/ehsanrashidi.dev](https://www.instagram.com/ehsanrashidi.dev)
