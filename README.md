@@ -60,7 +60,7 @@ npm run build
 ## استفاده از کامپوننت
 
 ```tsx
-import Player from "./components/Player";
+import { Player } from "./components/player-card";
 
 function App() {
     return (
@@ -71,25 +71,7 @@ function App() {
 }
 ```
 
-## ساختار پروژه
-
-```
-src/
-├── components/
-│   ├── Player/
-│   │   ├── Player.tsx
-│   │   ├── Player.module.css
-│   │   └── index.ts
-└── App.tsx
-```
-
-## کامپوننت‌های اصلی
-
-### Player
-
-کامپوننت اصلی پخش‌کننده که شامل تمام کنترل‌ها و نمایش اطلاعات آهنگ است.
-
-## اطلاعات تماس
+### اطلاعات تماس
 
 -   **نام:** احسان رشیدی
 -   **تلفن:** [+98 913 456 2731](tel:+989134562731)
